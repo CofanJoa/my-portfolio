@@ -1,0 +1,499 @@
+*{   
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #1a1919;
+    color: #F4F4F4;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Roboto Serif', serif;
+
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2{
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.5em;
+}
+/****************************************** HEADER SECTION **************************************************/
+
+header {
+    background-color: #f8f5f5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 4em;
+    padding-right: 2em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-family: 'Roboto Serif', serif;
+    border-bottom: 1em;
+    max-width: 100%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h1 {
+    text-shadow: 2px 2px 2px #bebebe;
+    font-family: 'Roboto Serif', serif;
+    font-size: 1.5em;
+}
+
+header .logo-link {
+    text-decoration: none;
+}
+
+header nav {
+    display: flex;
+    gap: 1.5em;
+    align-items: center;
+}
+
+header a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: #1a1919;
+}
+
+nav a{
+    text-decoration: none;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 1.5rem;
+    transition: color 0.5s ease;
+}
+
+nav a:hover{
+    color: #e75631;
+}
+
+
+
+/****************************************** WELCOME SECTION **************************************************/
+
+#welcome {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 1em;
+}
+
+
+
+.welcome-text-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.welcome-text-container h1 {
+    font-size: 3em;
+}
+
+.welcome-text-container h2 {
+    font-size: 2em;
+}
+
+.welcome-text-container p {
+    font-size: 1.5em;
+}
+
+.info-content {
+    padding: 2em;
+}
+
+.info-content p {
+    color: #F4F4F4;
+}
+
+span {
+    color: #e75631;
+}
+
+#welcome img {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 10%;
+    padding: 2em;
+    margin-bottom: 10em;
+}
+
+.welcome-text-container a {
+    width: 100%;
+}
+.welcome-text-container p {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.welcome-text-container button {
+    font-size: 1em;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-top: 1em ;
+    margin-bottom: 1em;
+}
+
+button{
+    transition: box-shadow 0.3s ease;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 1px solid #B23C32;
+    background-color: #e75631;
+    color: #F4F4F4;
+    cursor: pointer;
+    
+}
+
+button:hover{
+    background-color: #f85f39;
+}
+
+
+/****************************************** ABOUT ME SECTION **************************************************/
+
+#about-me {
+    background-color: #F4F4F4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    height: auto;
+}
+
+#about-me h1, p {
+    color: #1c1c27;
+}
+
+#about-me p {
+    margin-top: 1em;
+    padding-left: 4em;
+    padding-right: 4em;
+}
+
+.work-experience-title {
+    margin-top: 1em;
+}
+
+.about-me-info {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2em;
+}
+
+
+/****************************************** MY PROJECTS SECTION **************************************************/
+
+#projects .container{
+    text-align: center;
+    padding: 100px 12px;
+}
+
+#projects h1{
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+#projects .my-projects {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+#projects .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    border-radius: 5px;
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 3em;
+    cursor: pointer;
+}
+
+#projects .carta:hover {
+    box-shadow: 0px 2px 10px #525050;
+    transition: 0.2s ease-in;
+    transform: scale(1.10);
+}
+
+
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url('/img/sushi-background.png');
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url('/img/burguer.png');
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url('/img/weather.png');
+}
+
+.carta:nth-child(4){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url('/img/dinoo.png');
+}
+
+.carta:nth-child(5){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url('/img/burguer.png');
+}
+
+#projects h2 {
+    margin-bottom: 1em;
+    color: #F4F4F4;
+}
+
+#projects p {
+    color: #F4F4F4;
+}
+
+/**************************** CONTACT SECTION ************************/
+
+#contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 100vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url('/img/contact-photo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: auto;
+}
+
+#contact h1 {
+    padding: 1em;
+}
+
+#contact .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+#contact .iconos-contact{
+    margin-top: 1em;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+#contact img{
+    height: 48px;
+    justify-content: space-between;
+}
+
+#contact img:hover {
+    transition: 0.2s ease-in;
+    transform: scale(1.10);
+}
+
+
+footer p{
+    margin: 20;
+    color: #F4F4F4;
+    font-size: 15px;
+    font-family: 'Roboto Serif', serif;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#go-to-top-btn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background-color: #e75631; 
+    color: #fff;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+}
+
+#go-to-top-btn:hover {
+    background-color: #f85f39;
+    transition: 0.3s ease;
+}
+
+
+
+
+
+/* ************************ MEDIA QUERY**************/
+
+/* Pantallas pequeñas: móviles (max-width: 576px) */
+@media (max-width: 576px) {
+    header {
+        padding-left: 4.3em;
+        padding-right: 2em;
+    }
+
+    header .logo {
+        display: none;
+    }
+
+    header nav a {
+        margin: 0.5em;
+        font-size: 1em;
+    }
+
+    #welcome img {
+        display: none;
+    }
+
+    .welcome-text-container {
+        text-align: center;
+    }
+
+    .welcome-text-container h1 {
+        font-size: 2em;
+    }
+
+    .welcome-text-container h2 {
+        font-size: 1.5em;
+    }
+
+    .welcome-text-container p {
+        font-size: 1em;
+    }
+
+    #about-me p {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+
+    #projects .carta {
+        width: 100%;
+    }
+}
+
+
+@media (min-width: 577px) and (max-width: 991px) {
+    header {
+        padding-left: 3em;
+        padding-right: 3em;
+    }
+    
+    header nav a {
+        margin: 0.5em;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    #welcome img {
+        display: none;
+    }
+
+    .welcome-text-container {
+        text-align: left;
+    }
+
+    .welcome-text-container h1 {
+        font-size: 3em;
+    }
+
+    .welcome-text-container h2 {
+        font-size: 2em;
+    }
+
+    .welcome-text-container p {
+        font-size: 1.5em;
+    }
+
+    #about-me p {
+        padding-left: 4em;
+        padding-right: 4em;
+    }
+
+    #projects .carta {
+        width: 30%;
+    }
+}
+
+@media (min-width: 992px) {
+    header {
+        padding-left: 4em;
+        padding-right: 2em;
+    }
+
+    header .logo {
+        margin-right: 0;
+    }
+
+    header nav {
+        display: flex;
+        gap: 1.5em;
+    }
+
+
+    #welcome {
+        flex-direction: row-reverse;
+    }
+
+    #welcome img {
+        max-width: 450px;
+        margin-left: 2em;
+    }
+}
