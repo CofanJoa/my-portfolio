@@ -381,11 +381,11 @@ footer{
 
 /* ************************ MEDIA QUERY**************/
 
-/* Pantallas pequeñas: móviles (max-width: 576px) */
 @media (max-width: 576px) {
+
     header {
-        padding-left: 4.3em;
-        padding-right: 2em;
+        font-size: .8em;
+        align-content: center;
     }
 
     header .logo {
@@ -420,10 +420,36 @@ footer{
     #about-me p {
         padding-left: 2em;
         padding-right: 2em;
+        font-size: 1em;
+    }
+
+    #about-me h1 {
+        font-size: 2em;
+    }
+
+    #projects h1 {
+        font-size: 2em;
+    }
+
+    #projects h2 {
+        font-size: 1.5em;
+    }
+
+    #projects p {
+        font-size: 1em;
     }
 
     #projects .carta {
         width: 100%;
+    }
+
+    #contact h1 {
+        font-size: 2em;
+    }
+
+    #contact img {
+        height: 2.5em;
+
     }
 }
 
